@@ -1,4 +1,4 @@
-
+import {BrowserRouter,Routes} from "react-router-dom";
 
 
 function App() {
@@ -6,7 +6,11 @@ function App() {
 
   return (
     <>
-      
+      <BrowserRouter>
+      <Routes>
+
+      </Routes>
+      </BrowserRouter>
      
     </>
   )
