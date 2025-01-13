@@ -1,6 +1,6 @@
 
 
-function Navbar() {
+function Logout() {
   return (
     <div>
       
@@ -8,4 +8,4 @@ function Navbar() {
   )
 }
 
-export default Navbar
+export default Logout
