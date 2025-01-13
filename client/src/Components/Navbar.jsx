@@ -4,7 +4,7 @@ import AppBar from '@mui/material/AppBar';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
-
+import Logout from './Logout';
 
 
 
@@ -24,6 +24,7 @@ function Navbar() {
                 <Button variant="contained" style={button} color="success" component={Link} to="/signup">
                     Signup
                 </Button>
+                <Logout  />
           
      
     </Toolbar>
