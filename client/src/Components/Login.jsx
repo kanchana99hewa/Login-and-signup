@@ -4,7 +4,11 @@ import { Grid, Link, Button, Paper, TextField, Typography } from "@mui/material"
 
 
 function Login() {
-  return (
+  const paperStyle = {padding: "2rem", margin: "100px auto", borderRadius:"1rem", boxShadow: "10px 10px 10px"};
+    const heading = {fontSize:"2.5rem", fontWeight:"600"}
+    const row = {display:"flex", marginTop:"2rem"}
+    const btnStyle={marginTop:"2rem", fontSize:"1.2rem", fontWeight:"700", backgroundColor:"blue", borderRadius:"0.5rem"};
+    return (
     <div>
               <Grid align="center" className="wrapper">
                 <Paper style={paperStyle} sx={{width: {
