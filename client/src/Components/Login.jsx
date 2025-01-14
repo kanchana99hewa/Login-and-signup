@@ -26,9 +26,9 @@ function Login() {
                         <TextField style={row} sx={{label: { fontWeight: '700', fontSize:"1.3rem" }}} fullWidth type="text" label="Enter Name" name="name"></TextField>
                         <TextField style={row} sx={{label: { fontWeight: '700', fontSize:"1.3rem" }}} fullWidth label="Email" variant="outlined" type="email" placeholder="Enter Email" name="email" />                    
                         <TextField style={row} sx={{label: { fontWeight: '700', fontSize:"1.3rem" }}} fullWidth label="Password" variant="outlined" type="password" placeholder="Enter Password" name="password" />
-                        <Button style={btnStyle} variant="contained" type="submit">SignUp</Button>
+                        <Button style={btnStyle} variant="contained" type="submit">Login</Button>
                     </form>
-                    <p>Already have an account?<Link href="/login"> Login</Link></p>
+                    <p>Dont have an account? <Link href="/signup">SignUp</Link></p>
                 </Paper>
             </Grid>
 </div>
