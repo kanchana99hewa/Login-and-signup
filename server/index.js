@@ -18,3 +18,11 @@ mongoose.connect(process.env.MONGO_URI)
 app.listen(process.env.PORT, () => {
     console.log(`Server is running on port ${process.env.PORT}`);
 });
+app.post("/signup", async (req, res) => {
+    try {
+        const { name, email, password } = req.body;
+        const existingUser = await UserModel.findOne({ email });
+        if (existingUser) {
+            return res.status(400).json({ error: "Email already exists" });
+        }
+    });
