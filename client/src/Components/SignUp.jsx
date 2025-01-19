@@ -19,7 +19,12 @@ function SignUp() {
             }
         })
         .catch(err => {
-            
+            if (err.response && err.response.status === 400) {
+                window.alert("Email already exists. Please use a different email.");
+            } else {
+                console.log(err);
+            }
+
         });
 
     const paperStyle = { padding: "2rem", margin: "100px auto", borderRadius: "1rem", boxShadow: "10px 10px 10px" };
