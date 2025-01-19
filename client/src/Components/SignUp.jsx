@@ -18,6 +18,9 @@ function SignUp() {
                 navigate("/login");
             }
         })
+        .catch(err => {
+            
+        });
 
     const paperStyle = { padding: "2rem", margin: "100px auto", borderRadius: "1rem", boxShadow: "10px 10px 10px" };
     const heading = { fontSize: "2.5rem", fontWeight: "600" };
