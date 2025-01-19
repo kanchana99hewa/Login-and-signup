@@ -29,4 +29,7 @@ app.post("/signup", async (req, res) => {
         const newUser = new UserModel({ name, email, password: hashedPassword });
         const savedUser = await newUser.save();
         res.status(201).json(savedUser);
+    } catch (error) {
+        res.status(500).json({ error: error.message });
+    }
     });
