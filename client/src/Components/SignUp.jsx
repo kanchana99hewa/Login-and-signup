@@ -12,6 +12,11 @@ function SignUp() {
     const handleSignup = (e) => {
         e.preventDefault();
         axios.post("http://localhost:3001/signup", { name, email, password })
+        .then(result => {
+            if (result.status === 201) {
+                navigate("/login");
+            }
+        })
 
     const paperStyle = { padding: "2rem", margin: "100px auto", borderRadius: "1rem", boxShadow: "10px 10px 10px" };
     const heading = { fontSize: "2.5rem", fontWeight: "600" };
