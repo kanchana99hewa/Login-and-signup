@@ -1,14 +1,14 @@
-import { useState } from "react";
+import  {useState} from "react";
 import { useNavigate } from "react-router-dom";
+import axios from "axios";
 import { Grid, Link, Button, Paper, TextField, Typography } from "@mui/material";
 
 
-function SignUp() {
+function SignUp(){
     const [name, setName] = useState("");
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
-
-
+    const navigate = useNavigate();
  
     const handleSignup = (e) => {
         e.preventDefault();
