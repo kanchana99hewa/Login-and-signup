@@ -21,7 +21,7 @@ function Login() {
                 height:{
                     lg: '60vh',     // 1200px and up
                 }}}>
-                    <Typography component="h1" variant="h5" style={heading}> Signup </Typography>
+                    <Typography component="h1" variant="h5" style={heading}> Login </Typography>
                     <form >
                         <TextField style={row} sx={{label: { fontWeight: '700', fontSize:"1.3rem" }}} fullWidth type="text" label="Enter Name" name="name"></TextField>
                         <TextField style={row} sx={{label: { fontWeight: '700', fontSize:"1.3rem" }}} fullWidth label="Email" variant="outlined" type="email" placeholder="Enter Email" name="email" />                    
